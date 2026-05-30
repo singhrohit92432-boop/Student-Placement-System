@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Student Placement System
+</title>
+
+<link
+rel="stylesheet"
+href="style.css"
+>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+rel="stylesheet"
+>
+
+<script
+defer
+src="script.js"
+></script>
+
+</head>
+
+<body>
+
+<!-- TOAST MESSAGE BOX -->
+<div id="toastBox"></div>
+
+<div class="appContainer">
+
+<!-- ========================= -->
+<!-- LANDING PAGE -->
+<!-- ========================= -->
+
+<section
+id="landingPage"
+class="page activePage"
+>
+
+<nav class="mainNavbar">
+
+<div class="brandBox">
+
+<div class="brandIcon">
+SPS
+</div>
+
+<div class="brandText">
+Student Placement System
+</div>
+
+</div>
+
+<div class="navActions">
+
+<button
+type="button"
+class="navGhostBtn"
+onclick="openAbout()"
+>
+About
+</button>
+
+<button
+type="button"
+class="navGhostBtn"
+onclick="openStudentAuth()"
+>
+Student
+</button>
+
+<button
+type="button"
+class="navMainBtn"
+onclick="openCompanyAuth()"
+>
+Company
+</button>
+
+</div>
+
+</nav>
+
+<div class="landingWrapper">
+
+<div class="landingContent">
+
+<div class="smallBadge">
+</div>
+
+<h1>
+Smart Student Placement System
+</h1>
+
+<p>
+A clean and interactive placement platform for students and companies with
+job recommendations, application tracking, skill-gap analysis and placement
+management.
+</p>
+
+<div class="landingButtons">
+
+<button
+type="button"
+onclick="openStudentAuth()"
+>
+Student Portal
+</button>
+
+<button
+type="button"
+class="outlineBtn"
+onclick="openCompanyAuth()"
+>
+Company Portal
+</button>
+
+</div>
+
+<div class="landingStats">
+
+<div class="landingStatCard">
+
+<h3>
+DAA
+</h3>
+
+<p>
+Algorithm Based
+</p>
+
+</div>
+
+<div class="landingStatCard">
+
+<h3>
+Live
+</h3>
+
+<p>
+Applications
+</p>
+
+</div>
+
+<div class="landingStatCard">
+
+<h3>
+Smart
+</h3>
+
+<p>
+Recommendations
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="landingVisual blankVisual"></div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ABOUT PAGE -->
+<!-- ========================= -->
+
+<section
+id="aboutPage"
+class="page"
+>
+
+<div class="pageTopBar">
+
+<button
+type="button"
+onclick="goHome()"
+>
+← Back
+</button>
+
+<h1>
+About Project
+</h1>
+
+</div>
+
+<div class="aboutWrapper">
+
+<div class="aboutMainCard">
+
+<h2>
+Student Placement System
+</h2>
+
+<p>
+This project is designed for placement management where students can register,
+complete their profile, view recommended jobs, apply for jobs and track their
+applications.
+</p>
+
+</div>
+
+<div class="aboutGrid">
+
+<div class="aboutInfoCard">
+
+<h3>
+Lanaguages used
+</h3>
+
+<ul>
+
+<li>
+HTML
+</li>
+
+<li>
+JAVA
+</li>
+
+<li>
+MYSQL
+</li>
+
+<li>
+CSS
+</li>
+
+</ul>
+
+</div>
+
+<div class="aboutInfoCard">
+
+<h3>
+Frontend Features
+</h3>
+
+<ul>
+
+<li>
+Student and company portal
+</li>
+
+<li>
+Interactive dashboards
+</li>
+
+<li>
+Job recommendation cards
+</li>
+
+<li>
+Application tracking
+</li>
+
+<li>
+Skill-gap analysis
+</li>
+
+<li>
+Search and sorting
+</li>
+
+</ul>
+
+</div>
+
+<div class="aboutInfoCard">
+
+<h3>
+Backend Features
+</h3>
+
+<ul>
+
+<li>
+Student authentication
+</li>
+
+<li>
+Company authentication
+</li>
+
+<li>
+MySQL database integration
+</li>
+
+<li>
+Job management
+</li>
+
+<li>
+Application tracking
+</li>
+
+<li>
+Shortlist and selection system
+</li>
+
+</ul>
+
+</div>
+
+<div class="aboutInfoCard">
+
+<h3>
+DAA Algorithms
+</h3>
+
+<ul>
+
+<li>
+Merge Sort for ranking
+</li>
+
+<li>
+Binary Search for optimized search
+</li>
+
+<li>
+Greedy Algorithm for best match
+</li>
+
+<li>
+Dynamic Programming for skill mapping
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- STUDENT AUTH PAGE -->
+<!-- ========================= -->
+
+<section
+id="studentAuthPage"
+class="page authPage"
+>
+
+<div class="authShell">
+
+<div class="authInfoPanel">
+
+<button
+type="button"
+class="backMiniBtn"
+onclick="goHome()"
+>
+← Home
+</button>
+
+<h1>
+Student Portal
+</h1>
+
+<p>
+Login to continue or register to create your student account. After registration,
+you will be asked to complete your full profile.
+</p>
+
+<div class="authFeatureList">
+
+<div>
+<span>
+01
+</span>
+Create account
+</div>
+
+<div>
+<span>
+02
+</span>
+Complete profile
+</div>
+
+<div>
+<span>
+03
+</span>
+View recommendations
+</div>
+
+</div>
+
+</div>
+
+<div class="authFormPanel">
+
+<div class="authCard">
+
+<h2>
+Student Login
+</h2>
+
+<div class="inputGroup">
+
+<label>
+Email
+</label>
+
+<input
+type="email"
+id="studentLoginEmail"
+placeholder="Enter email"
+>
+
+</div>
+
+<div class="inputGroup">
+
+<label>
+Password
+</label>
+
+<input
+type="password"
+id="studentLoginPassword"
+placeholder="Enter password"
+>
+
+</div>
+
+<button
+type="button"
+class="fullBtn"
+onclick="studentLogin()"
+>
+Login
+</button>
+
+<div class="formDivider">
+or register
+</div>
+
+<h2>
+Student Register
+</h2>
+
+<form id="studentRegisterForm">
+
+<div class="inputGroup">
+
+<label>
+Full Name
+</label>
+
+<input
+type="text"
+id="studentRegisterName"
+placeholder="Enter full name"
+>
+
+</div>
+
+<div class="inputGroup">
+
+<label>
+Email
+</label>
+
+<input
+type="email"
+id="studentRegisterEmail"
+placeholder="Enter email"
+>
+
+</div>
+
+<div class="inputGroup">
+
+<label>
+Password
+</label>
+
+<input
+type="password"
+id="studentRegisterPassword"
+placeholder="Create password"
+>
+
+</div>
+
+<div class="inputGroup">
+
+<label>
+CGPA
+</label>
+
+<input
+type="number"
+id="studentRegisterCgpa"
+placeholder="Enter CGPA"
+>
+
+</div>
+
+<button
+type="button"
+class="fullBtn secondaryFullBtn"
+onclick="studentRegister()"
+>
+Register & Complete Profile
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- COMPANY AUTH PAGE -->
+<!-- ========================= -->
+
+<section
+id="companyAuthPage"
+class="page authPage"
+>
+
+<div class="authShell">
+
+<div class="authInfoPanel companyInfoPanel">
+
+<button
+type="button"
+class="backMiniBtn"
+onclick="goHome()"
+>
+← Home
+</button>
+
+<h1>
+Company Portal
+</h1>
+
+<p>
+Login to manage jobs and applicants. After registration, you will be asked to
+complete your company profile.
+</p>
+
+<div class="authFeatureList">
+
+<div>
+<span>
+01
+</span>
+Create company account
+</div>
+
+<div>
+<span>
+02
+</span>
+Complete profile
+</div>
+
+<div>
+<span>
+03
+</span>
+Post jobs
+</div>
+
+</div>
+
+</div>
+
+<div class="authFormPanel">
+
+<div class="authCard">
+
+<h2>
+Company Login
+</h2>
+
+<div class="inputGroup">
+
+<label>
+Company Email
+</label>
+
+<input
+type="email"
+id="companyLoginEmail"
+placeholder="Enter company email"
+>
+
+</div>
+
+<div class="inputGroup">
+
+<label>
+Password
+</label>
+
+<input
+type="password"
+id="companyLoginPassword"
+placeholder="Enter password"
+>
+
+</div>
+
+<button
+type="button"
+class="fullBtn"
+onclick="companyLogin()"
+>
+Login
+</button>
+
+<div class="formDivider">
+or register
+</div>
+
+<h2>
+Company Register
+</h2>
+
+<form id="companyRegisterForm">
+
+<div class="inputGroup">
+
+<label>
+Company Name
+</label>
+
+<input
+type="text"
+id="companyRegisterName"
+placeholder="Enter company name"
+>
+
+</div>
+
+<div class="inputGroup">
+
+<label>
+Company Email
+</label>
+
+<input
+type="email"
+id="companyRegisterEmail"
+placeholder="Enter company email"
+>
+
+</div>
+
+<div class="inputGroup">
+
+<label>
+Password
+</label>
+
+<input
+type="password"
+id="companyRegisterPassword"
+placeholder="Create password"
+>
+
+</div>
+
+<button
+type="button"
+class="fullBtn secondaryFullBtn"
+onclick="companyRegister()"
+>
+Register & Complete Profile
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- STUDENT DASHBOARD -->
+<!-- ========================= -->
+
+<section
+id="studentDashboard"
+class="page"
+>
+
+<div class="dashboardShell">
+
+<!-- STUDENT PROFILE FORM -->
+
+<aside
+class="profileSidePanel"
+id="profileFormCard"
+>
+
+<div class="panelHeader">
+
+<h2>
+Complete Profile
+</h2>
+
+<p>
+Add your details to improve recommendations.
+</p>
+
+</div>
+
+<div class="profileGrid">
+
+<input
+type="text"
+id="studentFullName"
+placeholder="Full Name"
+/>
+
+<input
+type="email"
+id="studentProfileEmail"
+placeholder="Email"
+/>
+
+<input
+type="text"
+id="studentPhone"
+placeholder="Phone Number"
+/>
+
+<input
+type="text"
+id="studentCollege"
+placeholder="College Name"
+/>
+
+<input
+type="text"
+id="studentDepartment"
+placeholder="Department"
+/>
+
+<input
+type="number"
+id="studentCgpaInput"
+placeholder="CGPA"
+/>
+
+<input
+type="text"
+id="studentSkillsInput"
+placeholder="Skills comma separated"
+/>
+
+<input
+type="text"
+id="studentGithub"
+placeholder="GitHub Link"
+/>
+
+<input
+type="text"
+id="studentLinkedin"
+placeholder="LinkedIn Link"
+/>
+
+<input
+type="text"
+id="studentResume"
+placeholder="Resume Drive Link"
+/>
+
+<textarea
+id="studentBio"
+placeholder="Short Bio"
+></textarea>
+
+<button
+type="button"
+onclick="saveStudentProfile()"
+>
+Save Profile
+</button>
+
+</div>
+
+</aside>
+
+<!-- SIDEBAR -->
+
+<aside class="dashboardSidebar">
+
+<div class="sideBrand">
+
+<div class="brandIcon">
+    SPS
+</div>
+
+<h2>
+Student
+</h2>
+
+</div>
+
+<ul>
+
+<li onclick="showStudentSection('studentHome')">
+Dashboard
+</li>
+
+<li onclick="showStudentSection('studentProfile')">
+Profile
+</li>
+
+<li onclick="showStudentSection('studentRecommendations')">
+Recommendations
+</li>
+
+<li onclick="showStudentSection('studentApplications')">
+Applications
+</li>
+
+<li onclick="showStudentSection('studentSkillGap')">
+Skill Gap
+</li>
+
+<li onclick="logout()">
+Logout
+</li>
+
+</ul>
+
+</aside>
+
+<!-- CONTENT -->
+
+<main class="dashboardMain">
+
+<div class="dashboardTopbar">
+
+<div>
+
+<h2>
+Welcome Student
+</h2>
+
+<p>
+Manage your placement journey.
+</p>
+
+</div>
+
+<div class="topbarControls">
+
+<input
+type="text"
+id="jobSearch"
+placeholder="Search jobs..."
+onkeyup="searchJobs()"
+>
+
+<select
+id="sortJobs"
+onchange="sortJobs()"
+>
+
+<option value="">
+Sort Jobs
+</option>
+
+<option value="cgpa">
+CGPA
+</option>
+
+<option value="match">
+Skill Match
+</option>
+
+<option value="company">
+Company
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+<!-- STUDENT HOME -->
+
+<div
+id="studentHome"
+class="studentSection activeStudentSection"
+>
+
+<div class="statsGrid">
+
+<div class="statsCard">
+
+<span>
+Available Jobs
+</span>
+
+<h2 id="totalJobs">
+0
+</h2>
+
+</div>
+
+<div class="statsCard">
+
+<span>
+Applications
+</span>
+
+<h2 id="totalApplications">
+0
+</h2>
+
+</div>
+
+<div class="statsCard">
+
+<span>
+Recommendation Score
+</span>
+
+<h2 id="recommendationScore">
+0%
+</h2>
+
+</div>
+
+<div class="statsCard">
+
+<span>
+Eligibility
+</span>
+
+<h2 id="eligibilityScore">
+0%
+</h2>
+
+</div>
+
+</div>
+
+<div class="sectionTitle">
+
+<h1>
+Recommended Jobs
+</h1>
+
+<p>
+Jobs matched with your profile.
+</p>
+
+</div>
+
+<div
+class="jobsGrid"
+id="jobsGrid"
+></div>
+
+</div>
+
+<!-- STUDENT PROFILE -->
+
+<div
+id="studentProfile"
+class="studentSection"
+>
+
+<div class="sectionTitle">
+
+<h1>
+Student Profile
+</h1>
+
+<p>
+Your saved student details.
+</p>
+
+</div>
+
+<div class="profileViewCard">
+
+<div class="profileAvatar">
+S
+</div>
+
+<div class="profileInfo">
+
+<h2 id="studentName">
+Student Name
+</h2>
+
+<p id="studentEmail">
+student@email.com
+</p>
+
+<p>
+CGPA:
+<span id="studentCgpa">
+0
+</span>
+</p>
+
+<h3>
+Skills
+</h3>
+
+<div
+class="skillsContainer"
+id="studentSkills"
+></div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RECOMMENDATIONS -->
+
+<div
+id="studentRecommendations"
+class="studentSection"
+>
+
+<div class="sectionTitle">
+
+<h1>
+Job Recommendations
+</h1>
+
+<p>
+Recommended jobs based on skill matching.
+</p>
+
+</div>
+
+<div
+class="recommendationGrid"
+id="recommendationGrid"
+></div>
+
+</div>
+
+<!-- APPLICATIONS -->
+
+<div
+id="studentApplications"
+class="studentSection"
+>
+
+<div class="sectionTitle">
+
+<h1>
+Application Tracking
+</h1>
+
+<p>
+Track your placement applications.
+</p>
+
+</div>
+
+<div class="tableContainer">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Company
+</th>
+
+<th>
+Role
+</th>
+
+<th>
+Status
+</th>
+
+<th>
+Match %
+</th>
+
+<th>
+Date
+</th>
+
+</tr>
+
+</thead>
+
+<tbody id="applicationTable"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- SKILL GAP -->
+
+<div
+id="studentSkillGap"
+class="studentSection"
+>
+
+<div class="sectionTitle">
+
+<h1>
+Skill Gap Analysis
+</h1>
+
+<p>
+Skills you need to improve for better eligibility.
+</p>
+
+</div>
+
+<div
+class="skillGapGrid"
+id="skillGapGrid"
+></div>
+
+</div>
+
+</main>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- COMPANY DASHBOARD -->
+<!-- ========================= -->
+
+<section
+id="companyDashboard"
+class="page"
+>
+
+<div class="dashboardShell">
+
+<!-- COMPANY PROFILE FORM -->
+
+<aside
+class="profileSidePanel"
+id="companyProfileCard"
+>
+
+<div class="panelHeader">
+
+<h2>
+Company Profile
+</h2>
+
+<p>
+Complete details before posting jobs.
+</p>
+
+</div>
+
+<div class="profileGrid">
+
+<input
+type="text"
+id="companyNameInput"
+placeholder="Company Name"
+/>
+
+<input
+type="email"
+id="companyEmailInput"
+placeholder="Company Email"
+/>
+
+<input
+type="text"
+id="companyWebsite"
+placeholder="Company Website"
+/>
+
+<input
+type="text"
+id="companyLocation"
+placeholder="Location"
+/>
+
+<input
+type="text"
+id="companyHR"
+placeholder="HR Name"
+/>
+
+<input
+type="text"
+id="companyContact"
+placeholder="Contact Number"
+/>
+
+<input
+type="text"
+id="companyIndustry"
+placeholder="Industry"
+/>
+
+<input
+type="number"
+id="companyEmployees"
+placeholder="Employees Count"
+/>
+
+<textarea
+id="companyDescription"
+placeholder="Company Description"
+></textarea>
+
+<button
+type="button"
+onclick="saveCompanyProfile()"
+>
+Save Company Profile
+</button>
+
+</div>
+
+</aside>
+
+<!-- SIDEBAR -->
+
+<aside class="dashboardSidebar">
+
+<div class="sideBrand">
+
+<div class="brandIcon">
+    SPS
+</div>
+
+<h2>
+Company
+</h2>
+
+</div>
+
+<ul>
+
+<li onclick="showCompanySection('companyHome')">
+Dashboard
+</li>
+
+<li onclick="showCompanySection('companyAddJob')">
+Add Job
+</li>
+
+<li onclick="showCompanySection('companyJobs')">
+Manage Jobs
+</li>
+
+<li onclick="showCompanySection('companyApplicants')">
+Applicants
+</li>
+
+<li onclick="showCompanySection('companyShortlisted')">
+Shortlisted
+</li>
+
+<li onclick="logout()">
+Logout
+</li>
+
+</ul>
+
+</aside>
+
+<!-- CONTENT -->
+
+<main class="dashboardMain">
+
+<div class="dashboardTopbar">
+
+<div>
+
+<h2>
+Company Dashboard
+</h2>
+
+<p>
+Manage jobs, applicants and selections.
+</p>
+
+</div>
+
+</div>
+
+<!-- COMPANY HOME -->
+
+<div
+id="companyHome"
+class="companySection activeCompanySection"
+>
+
+<div class="statsGrid">
+
+<div class="statsCard">
+
+<span>
+Active Jobs
+</span>
+
+<h2 id="companyTotalJobs">
+0
+</h2>
+
+</div>
+
+<div class="statsCard">
+
+<span>
+Applicants
+</span>
+
+<h2 id="companyApplicantsCount">
+0
+</h2>
+
+</div>
+
+<div class="statsCard">
+
+<span>
+Shortlisted
+</span>
+
+<h2 id="companyShortlistedCount">
+0
+</h2>
+
+</div>
+
+<div class="statsCard">
+
+<span>
+Selected
+</span>
+
+<h2 id="companySelectedCount">
+0
+</h2>
+
+</div>
+
+</div>
+
+<div class="companyDashboardBoxes">
+
+<div class="dashboardBox">
+
+<h2>
+Recent Applications
+</h2>
+
+<div
+id="recentApplicants"
+class="recentApplicants"
+></div>
+
+</div>
+
+<div class="dashboardBox">
+
+<h2>
+Top Skills In Demand
+</h2>
+
+<div class="skillsContainer">
+
+<span>
+Java
+</span>
+
+<span>
+React
+</span>
+
+<span>
+Python
+</span>
+
+<span>
+SQL
+</span>
+
+<span>
+NodeJS
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ADD JOB -->
+
+<div
+id="companyAddJob"
+class="companySection"
+>
+
+<div class="sectionTitle">
+
+<h1>
+Add New Job
+</h1>
+
+<p>
+Create internship or placement openings.
+</p>
+
+</div>
+
+<div class="jobFormContainer">
+
+<form
+id="jobForm"
+class="jobForm"
+>
+
+<input
+type="text"
+id="jobTitle"
+placeholder="Job Title"
+>
+
+<select id="jobType">
+
+<option value="">
+Select Type
+</option>
+
+<option value="Internship">
+Internship
+</option>
+
+<option value="Placement">
+Placement
+</option>
+
+</select>
+
+<input
+type="number"
+id="jobCgpa"
+placeholder="Required CGPA"
+>
+
+<input
+type="number"
+id="jobSlots"
+placeholder="Number Of Slots"
+>
+
+<input
+type="text"
+id="jobSkills"
+placeholder="Required Skills comma separated"
+>
+
+<textarea
+id="jobDescription"
+placeholder="Job Description"
+></textarea>
+
+<button
+type="button"
+onclick="addJob()"
+>
+Add Job
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- MANAGE JOBS -->
+
+<div
+id="companyJobs"
+class="companySection"
+>
+
+<div class="sectionTitle">
+
+<h1>
+Manage Jobs
+</h1>
+
+<p>
+View, edit or delete posted jobs.
+</p>
+
+</div>
+
+<div
+class="manageJobsGrid"
+id="manageJobsGrid"
+></div>
+
+</div>
+
+<!-- APPLICANTS -->
+
+<div
+id="companyApplicants"
+class="companySection"
+>
+
+<div class="sectionTitle">
+
+<h1>
+Applicants
+</h1>
+
+<p>
+Review student applications.
+</p>
+
+</div>
+
+<div
+class="applicantsGrid"
+id="applicantsGrid"
+></div>
+
+</div>
+
+<!-- SHORTLISTED -->
+
+<div
+id="companyShortlisted"
+class="companySection"
+>
+
+<div class="sectionTitle">
+
+<h1>
+Shortlisted Students
+</h1>
+
+<p>
+View shortlisted students and select candidates.
+</p>
+
+</div>
+
+<div
+class="shortlistedGrid"
+id="shortlistedGrid"
+></div>
+
+</div>
+
+</main>
+
+</div>
+
+</section>
+
+</div>
+
+</body>
+
+</html>
